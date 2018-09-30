@@ -14,6 +14,18 @@ client.on('message', message => {
   if (message.content.startsWith(adminprefix + 'ply')) {
     client.user.setGame(argresult);
       message.channel.sendMessage(`**✅   ${argresult}**`)
+  } else 
+  if (message.content.startsWith(adminprefix + 'wt')) {
+  client.user.setActivity(argresult, {type:'WATCHING'});
+      message.channel.sendMessage(`**✅   ${argresult}**`)
+  } else 
+  if (message.content.startsWith(adminprefix + 'ls')) {
+  client.user.setActivity(argresult , {type:'LISTENING'});
+      message.channel.sendMessage(`**✅   ${argresult}**`)
+  } else 
+  if (message.content.startsWith(adminprefix + 'st')) {
+    client.user.setGame(argresult, "https://m.twitch.tv/i00e");
+      message.channel.sendMessage(`**✅   ${argresult}**`)
   }
   console.log('')
   console.log('')
