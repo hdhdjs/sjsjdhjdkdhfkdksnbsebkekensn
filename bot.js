@@ -5,10 +5,6 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -31,5 +27,8 @@ client.on('message', msg => {
   console.log('')
   console.log('')
 });
+
+
+
 
 client.login(process.env.BOT_TOKEN);
