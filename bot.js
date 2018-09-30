@@ -5,6 +5,7 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
+client.user.setGame(`‎سَآبقى‌‌كماأناوسلامًا على‌‌من ‌‌راق ‌‌لهُ‌الإبتعاد`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
@@ -27,13 +28,5 @@ client.on('ready', () => {
   console.log('')
   console.log('')
 });
-
-
-client.on('message', msg => {
-  if (msg.content === 'ping') {
-    msg.reply('Pong!');
-  }
-
-
 
 client.login(process.env.BOT_TOKEN);
