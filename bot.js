@@ -4,13 +4,13 @@ const prefix = '.'
 
 client.on('ready', () => {
   console.log(`Logged in as ${client.user.tag}!`);
-client.user.setGame(` ‎سَآبقى‌‌كماأناوسلامًا على‌‌من ‌‌راق ‌‌لهُ‌الإبتعاد`,"http://twitch.tv/S-F")
+client.user.setGame(`Nothing`,"http://twitch.tv/S-F")
   console.log('')
   console.log('')
   console.log('╔[═════════════════════════════════════════════════════════════════]╗')
   console.log(`[Start] ${new Date()}`);
   console.log('╚[═════════════════════════════════════════════════════════════════]╝')
-  con
+  console.log('')
   console.log('╔[════════════════════════════════════]╗');
   console.log(`Logged in as * [ " ${client.user.username} " ]`);
   console.log('')
@@ -28,5 +28,4 @@ client.user.setGame(` ‎سَآبقى‌‌كماأناوسلامًا على‌�
   console.log('')
 });
 
-
-client.login(process.env.BOT_TOKEN);
+client.login(process.env.BOT_TOKEN);client.login(process.env.BOT_TOKEN);
