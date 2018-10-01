@@ -29,6 +29,6 @@ client.on('message', message => {
     client.user.setGame(argresult, "https://m.twitch.tv/i00e");
       message.channel.sendMessage(`**!   ${argresult}**`)
   }
-  });  });
+  });
 
 client.login(process.env.BOT_TOKEN);
