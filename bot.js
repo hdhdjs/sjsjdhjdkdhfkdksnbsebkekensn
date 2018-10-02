@@ -26,7 +26,7 @@ client.on('message', message => {
       message.channel.sendMessage(`**!  ${argresult}**`)
   } else 
   if (message.content.startsWith(adminprefix + 'st')) {
-    client.user.setGame(argresult, "https://m.twitch.tv/i00e");
+    client.user.setGame(argresult, "https://www.twitch.tv/حب بلا حدود");
       message.channel.sendMessage(`**!   ${argresult}**`)
   }
   });
